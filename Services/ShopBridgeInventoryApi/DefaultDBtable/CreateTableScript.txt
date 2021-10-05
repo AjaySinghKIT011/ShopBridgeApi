@@ -1,0 +1,11 @@
+﻿Create table InventoryMasters (
+	ItemId int Primary Key,
+    ItemName varchar(255) NOT NULL,
+    [Description] varchar(255) NOT NULL,
+    Price decimal(18, 2) NOT NULL,
+    CreatedBy varchar(255),
+	CreatedDateTime DateTime DEFAULT  GetDate(),
+	ModifiedBy varchar(255),
+    ModifieDateTime DateTime DEFAULT  GetDate(),
+	IsDeleted BIT Default '0'
+)
